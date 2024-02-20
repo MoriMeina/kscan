@@ -27,11 +27,11 @@ jobs:
     - name: Generate Release
       uses: ncipollo/release-action@v1
       with:
-        name: ${{ env.DATE }}自编译版本
+        name: Kscan自编译版本
         allowUpdates: true
-        tag: ${{ env.DATE }}-自编译版本
+        tag: Kscan-自编译版本
         token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: ${{ env.FILE_PATH }}/kscan_*
+        artifacts: ./kscan_*
         body: |
               这是自编译的Kscan
 
